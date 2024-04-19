@@ -20,5 +20,8 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 Given that all constants must be great than 0 AND
 Given that all n must be greater than $n_0$
-Then based on the defition of $O$: $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$
-$f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ Because big O includes the definition of little o as $f(n) \le c g(n)$ includes $f(n) < c g(n)$
+Then based on the defition of $O$: $f(n)\in O(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$
+$f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$ because 
+big O's requirements are less strict in that $f(n) \le c g(n)$ also contains $f(n) < c g(n)$
+or anything that allows < to be true, also allows $\le$ to be true on top of the elements that it is equal too.
+Thus, $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))
